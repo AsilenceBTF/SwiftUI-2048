@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		567BD2052B05209C003E546D /* Learn2048App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567BD2042B05209C003E546D /* Learn2048App.swift */; };
-		567BD2072B05209C003E546D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567BD2062B05209C003E546D /* ContentView.swift */; };
+		567BD2072B05209C003E546D /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567BD2062B05209C003E546D /* GameView.swift */; };
 		567BD2092B05209D003E546D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 567BD2082B05209D003E546D /* Assets.xcassets */; };
 		567BD20C2B05209D003E546D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 567BD20B2B05209D003E546D /* Preview Assets.xcassets */; };
+		567BD2132B0520E4003E546D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567BD2122B0520E4003E546D /* AppDelegate.swift */; };
+		5680257C2B0904A900157D08 /* BlockGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5680257B2B0904A900157D08 /* BlockGridView.swift */; };
+		5680257F2B09124900157D08 /* BlockMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5680257E2B09124900157D08 /* BlockMatrix.swift */; };
+		568025812B09143B00157D08 /* IdentifiedBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568025802B09143B00157D08 /* IdentifiedBlock.swift */; };
+		569AF07D2B0A47BD00517CFB /* GameLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569AF07C2B0A47BD00517CFB /* GameLogic.swift */; };
+		56CAAEF02B066C550034226C /* BlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CAAEEF2B066C540034226C /* BlockView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		567BD2012B05209C003E546D /* Learn2048.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Learn2048.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		567BD2042B05209C003E546D /* Learn2048App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learn2048App.swift; sourceTree = "<group>"; };
-		567BD2062B05209C003E546D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		567BD2062B05209C003E546D /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		567BD2082B05209D003E546D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		567BD20B2B05209D003E546D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		567BD2122B0520E4003E546D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5680257B2B0904A900157D08 /* BlockGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockGridView.swift; sourceTree = "<group>"; };
+		5680257E2B09124900157D08 /* BlockMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockMatrix.swift; sourceTree = "<group>"; };
+		568025802B09143B00157D08 /* IdentifiedBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiedBlock.swift; sourceTree = "<group>"; };
+		569AF07C2B0A47BD00517CFB /* GameLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLogic.swift; sourceTree = "<group>"; };
+		56CAAEEF2B066C540034226C /* BlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,9 @@
 		567BD2032B05209C003E546D /* Learn2048 */ = {
 			isa = PBXGroup;
 			children = (
-				567BD2042B05209C003E546D /* Learn2048App.swift */,
-				567BD2062B05209C003E546D /* ContentView.swift */,
+				5680257D2B09122D00157D08 /* Models */,
+				5680257A2B09049100157D08 /* Views */,
+				567BD2122B0520E4003E546D /* AppDelegate.swift */,
 				567BD2082B05209D003E546D /* Assets.xcassets */,
 				567BD20A2B05209D003E546D /* Preview Content */,
 			);
@@ -65,6 +76,26 @@
 				567BD20B2B05209D003E546D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5680257A2B09049100157D08 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				56CAAEEF2B066C540034226C /* BlockView.swift */,
+				567BD2062B05209C003E546D /* GameView.swift */,
+				5680257B2B0904A900157D08 /* BlockGridView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5680257D2B09122D00157D08 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5680257E2B09124900157D08 /* BlockMatrix.swift */,
+				568025802B09143B00157D08 /* IdentifiedBlock.swift */,
+				569AF07C2B0A47BD00517CFB /* GameLogic.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +168,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				567BD2072B05209C003E546D /* ContentView.swift in Sources */,
-				567BD2052B05209C003E546D /* Learn2048App.swift in Sources */,
+				567BD2132B0520E4003E546D /* AppDelegate.swift in Sources */,
+				56CAAEF02B066C550034226C /* BlockView.swift in Sources */,
+				5680257F2B09124900157D08 /* BlockMatrix.swift in Sources */,
+				5680257C2B0904A900157D08 /* BlockGridView.swift in Sources */,
+				568025812B09143B00157D08 /* IdentifiedBlock.swift in Sources */,
+				567BD2072B05209C003E546D /* GameView.swift in Sources */,
+				569AF07D2B0A47BD00517CFB /* GameLogic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +316,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +346,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
